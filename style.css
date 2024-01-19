@@ -1,0 +1,154 @@
+*{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #1F2937;
+    padding: 24px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;    
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin: 0px;
+    gap: 24px;
+}
+
+li{
+    font-size: 18px;
+    color: #E5E7EB;
+    align-self: center;
+    
+}
+
+li.logo{
+    font-size: 24px;
+    color: #F9FAF8;
+    margin-right: auto;
+}
+
+section.singUp {
+    background-color: #1F2937;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+div.singUp{
+    width: 450px;
+    margin: 0;
+    padding: 0;
+}
+
+div.singUp h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #F9FAF8;
+    margin: 0;
+    padding: 0;
+}
+
+div.singUp h2{
+    font-size: 18px;
+    color: #E5E7EB;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: #3882F6;
+    border: none;
+    color: white;
+    margin-top: 16px;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+section.choose{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.pokemons{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+}
+
+img.pokemon{
+    border: 4px solid #3882F6;
+    border-radius: 12px;
+}
+
+.choose h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1F2937;
+    margin: 0;
+    padding: 0;
+}
+
+div.pokemons h2{
+    font-size: 18px;
+    color: #1F2937;
+    margin: 0;
+    padding: 0;
+    width: 175px;
+    text-align: center;
+}
+
+section.inspiring {
+    padding: 100px;
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inspiring div {
+    width: 700px;
+}
+
+.inspiring h2{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    color: #1F2937;
+}
+
+.inspiring h3 {
+    margin-top: 12px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1F2937;
+    display: flex;
+    justify-content: flex-end;
+}
+
+div.singUpCard {
+    margin: 100px 150px 100px 150px;
+    padding: 50px 100px 50px 100px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 8px;
+}
