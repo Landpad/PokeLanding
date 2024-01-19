@@ -47,9 +47,14 @@ section.singUp {
 }
 
 div.singUp{
-    width: 450px;
+    width: 34vw;
     margin: 0;
     padding: 0;
+}
+
+.singUp img {
+    width: 34vw;
+    height: 35vh;
 }
 
 div.singUp h1{
@@ -103,10 +108,12 @@ div.pokemons{
     padding: 50px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 28px;
 }
 
 img.pokemon{
+    width: 100%;
     border: 4px solid #3882F6;
     border-radius: 12px;
 }
