@@ -9,6 +9,9 @@ const img3 = document.getElementById('img3');
 const pkmnDesc1 = document.getElementById('pkmnDesc1');
 const pkmnDesc2 = document.getElementById('pkmnDesc2');
 const pkmnDesc3 = document.getElementById('pkmnDesc3');
+const pkmnGrowl1 = document.getElementById('growl1');
+const pkmnGrowl2 = document.getElementById('growl2');
+const pkmnGrowl3 = document.getElementById('growl3');
 
 hamburguer.addEventListener('click', () => {
     navUl.classList.toggle('show');
@@ -17,6 +20,19 @@ hamburguer.addEventListener('click', () => {
 hamburguer.addEventListener('click', () => {
     hamburguer.classList.toggle('clicked');
 });
+
+var playPromise = document.querySelector('audio').play();
+
+// In browsers that don’t yet support this functionality,
+// playPromise won’t be defined.
+if (playPromise !== undefined) {
+  playPromise.then(function() {
+    // Automatic playback started!
+  }).catch(function(error) {
+    // Automatic playback failed.
+    // Show a UI element to let the user manually start playback.
+  });
+}
 
 changeImg.addEventListener('click', () => {
     counter++;
@@ -34,6 +50,9 @@ changeImg.addEventListener('click', () => {
             pkmnDesc1.innerHTML = "Bulbasaur is a poison/grass type pokemon.";
             pkmnDesc2.innerHTML = "Squirtle is a water-type pokemon.";
             pkmnDesc3.innerHTML = "Charmander is a fire-type pokemon.";
+            pkmnGrowl1.src = "https://play.pokemonshowdown.com/audio/cries/bulbasaur.mp3";
+            pkmnGrowl2.src = "https://play.pokemonshowdown.com/audio/cries/squirtle.mp3";
+            pkmnGrowl3.src = "https://play.pokemonshowdown.com/audio/cries/charmander.mp3";
             break;
         
         case 2:
@@ -43,6 +62,9 @@ changeImg.addEventListener('click', () => {
             pkmnDesc1.innerHTML = "Chikorita is a grass type pokemon.";
             pkmnDesc2.innerHTML = "Totodile is a water-type pokemon.";
             pkmnDesc3.innerHTML = "Cyndaquil is a fire-type pokemon.";
+            pkmnGrowl1.src = 'https://play.pokemonshowdown.com/audio/cries/chikorita.mp3';
+            pkmnGrowl2.src = 'https://play.pokemonshowdown.com/audio/cries/totodile.mp3';
+            pkmnGrowl3.src = 'https://play.pokemonshowdown.com/audio/cries/cyndaquil.mp3';
             break;
 
         case 3:
@@ -52,6 +74,9 @@ changeImg.addEventListener('click', () => {
             pkmnDesc1.innerHTML = "Treecko is a grass type pokemon.";
             pkmnDesc2.innerHTML = "Mudkip is a water-type pokemon.";
             pkmnDesc3.innerHTML = "Torchic is a fire-type pokemon.";
+            pkmnGrowl1.src = 'https://play.pokemonshowdown.com/audio/cries/treecko.mp3';
+            pkmnGrowl2.src = 'https://play.pokemonshowdown.com/audio/cries/mudkip.mp3';
+            pkmnGrowl3.src = 'https://play.pokemonshowdown.com/audio/cries/torchic.mp3';
             break;
 
         case 4:
@@ -61,6 +86,9 @@ changeImg.addEventListener('click', () => {
             pkmnDesc1.innerHTML = "Turtwig is a grass type pokemon.";
             pkmnDesc2.innerHTML = "Piplup is a water-type pokemon.";
             pkmnDesc3.innerHTML = "Chimchar is a fire-type pokemon.";
+            pkmnGrowl1.src = 'https://play.pokemonshowdown.com/audio/cries/turtwig.mp3';
+            pkmnGrowl2.src = 'https://play.pokemonshowdown.com/audio/cries/piplup.mp3';
+            pkmnGrowl3.src = 'https://play.pokemonshowdown.com/audio/cries/chimchar.mp3';
             break;
         
         case 5:
@@ -70,6 +98,9 @@ changeImg.addEventListener('click', () => {
             pkmnDesc1.innerHTML = "Snivy is a grass type pokemon.";
             pkmnDesc2.innerHTML = "Oshawott is a water-type pokemon.";
             pkmnDesc3.innerHTML = "Tepig is a fire-type pokemon.";
+            pkmnGrowl1.src = 'https://play.pokemonshowdown.com/audio/cries/snivy.mp3';
+            pkmnGrowl2.src = 'https://play.pokemonshowdown.com/audio/cries/oshawott.mp3';
+            pkmnGrowl3.src = 'https://play.pokemonshowdown.com/audio/cries/tepig.mp3';
             break;
     }
 });
