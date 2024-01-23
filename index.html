@@ -11,18 +11,24 @@
 <body>
 
     <nav>
-        <ul>
+        <div class="hamburguer" id="hamburguer">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <div class="logo mobile">PokeChoose</div>
+        <ul class="navUl" id="navUl">
             <li class="logo">
                 <a href="">PokeChoose</a>
             </li>
             <li>
-                <a href="">Home</a>
+                <a href="" class="item">Home</a>
             </li>
             <li>
-                <a href="">About Pokemon</a>
+                <a href="" class="item">About Pokemon</a>
             </li>
             <li>
-                <a href="">Log In</a>
+                <a href="" class="item">Log In</a>
             </li>
         </ul>
     </nav>
@@ -30,8 +36,8 @@
     <section class="singUp">
         <div>
             <div class="singUp">
-                <h1>The pokemon world is awesome!</h1>
-                <h2>Thousands of adventures are waiting for you. Choose your pokemon and launch yourself into the wonderful pokemon world!</h2>
+                <p class="biggerFont">The pokemon world is awesome!</p>
+                <p class="smallerFont">Thousands of adventures are waiting for you. Choose your pokemon and launch yourself into the wonderful pokemon world!</p>
             </div>
             <a href="https://www.youtube.com/watch?v=QwLvrnlfdNo&ab_channel=ZuresGaming" target="_blank">
                 <button>Sing up</button>
@@ -41,31 +47,33 @@
     </section>
 
     <section class="choose">
-        <div><h1>Time to choose.</h1></div>
+        <div>
+            <p class="bigFont">Time to choose.</p>
+        </div>
         <div class="pokemons">
             <div>
                 <a href="">
                     <img class="pokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="bulbasaur" height="175" width="175">
                 </a>
-                <h2>Bulbasaur is a poison/grass type pokemon.</h2>
+                <p class="smallerFont">Bulbasaur is a poison/grass type pokemon.</p>
             </div>
             <div>
                 <a href="">
                     <img class="pokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="squirtle" height="175" width="175">
                 </a>
-                <h2>Squirtle is a water-type pokemon.</h2>
+                <p class="smallerFont">Squirtle is a water-type pokemon.</p>
             </div>
             <div>
                 <a href="">
                     <img class="pokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="charmander" height="175" width="175">
                 </a>
-                <h2>Charmander is a fire-type pokemon.</h2>
+                <p class="smallerFont">Charmander is a fire-type pokemon.</p>
             </div>
             <div>
                 <a href="">
                     <img class="pokemon" src="https://www.thewhizcells.com/app/uploads/2018/09/loading_red.gif" alt="cambiar gen" height="175" width="175">
                 </a>
-                <h2>Change region.</h2>
+                <p class="smallerFont">Change region.</p>
             </div>
         </div>
     </section>
@@ -73,10 +81,10 @@
     <section class="inspiring">
         <div>
             <div>
-                <h2>"I see now that the circumstances of one's birth are irrelevant. It is what you do with the gift of life that determines who you are."</h2>
+                <p class="bigFont">"I see now that the circumstances of one's birth are irrelevant. It is what you do with the gift of life that determines who you are."</p>
             </div>
             <div id="author">
-               <h3>-Mewtwo</h3>
+               <p class="smallFont">-Mewtwo</p>
             </div>
         </div>
     </section>
@@ -84,8 +92,8 @@
     <section>
         <div class="singUpCard">
             <div>
-                <h1>What are you waiting for!?</h1>
-                <h2>Join the pokemon world by clicking that button right over there!</h2>
+                <p class="smallFont">What are you waiting for!?</p>
+                <p class="smallerFont">Join the pokemon world by clicking that button right over there!</p>
             </div>
             <div>
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
@@ -97,8 +105,9 @@
 
     <footer>
         <div>
-            <h1>Copyright © The odin project 2024</h1>
+            <p class="smallerFont">Copyright © The odin project 2024</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
