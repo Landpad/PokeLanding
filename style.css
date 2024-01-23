@@ -60,8 +60,8 @@ li{
 }
 
 #playBtn img {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
 }
 
 li.logo{
@@ -230,6 +230,20 @@ footer .smallerFont {
     color: #F9FAF8;
 }
 
+.music.mobile{
+    display: none;
+    position: absolute;
+    left: 170px;
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    top: 2vh;
+}
+
+.music.mobile img{
+    width: 30px;
+}
+
 .hamburguer {
     background-color: transparent;
     border: 0;
@@ -288,8 +302,22 @@ footer .smallerFont {
         display: block;
     }
 
-    .navUl {
+    .music.mobile{
+        display: block;
+    }
+
+    .navUl{
         display: none;
+    }
+
+    #playBtn{
+        display: block;
+        position: absolute;
+        left: 170px;
+        z-index: 2;
+        padding: 0;
+        margin: 0;
+        top: 2vh;
     }
 
     li {
@@ -347,6 +375,10 @@ footer .smallerFont {
         transform: rotate(-45deg);
     }
 
+    nav {
+        padding: 24px;
+    }
+
     section.singUp {
         padding: 5vh 0 5vh 0;
         gap: 32px;
@@ -399,10 +431,15 @@ footer .smallerFont {
 
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (min-width: 600px) and (max-width: 930px) {
 
     .logo.mobile{
         display: block;
+    }
+
+    .music.mobile{
+        display: block;
+        left: 180px;
     }
 
     .navUl {
@@ -415,6 +452,16 @@ footer .smallerFont {
 
     .logo {
         display: none;
+    }
+
+    #playBtn{
+        display: block;
+        position: absolute;
+        left: 200px;
+        z-index: 2;
+        padding: 0;
+        margin: 0;
+        top: 2vh;
     }
 
     .hamburguer{
@@ -462,6 +509,10 @@ footer .smallerFont {
 
     .hamburguer.clicked .line3{
         transform: rotate(-45deg);
+    }
+
+    nav {
+        padding: 24px;
     }
 
     section.singUp {
