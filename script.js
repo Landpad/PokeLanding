@@ -101,22 +101,47 @@ changeImg.addEventListener('click', () => {
 });
 
 playBtn.addEventListener('click', () => {
+    const song1 = 'https://dl.vgmdownloads.com/soundtracks/pokemon-black-and-white-super-music-collection/xaulleweqx/2-02.%20Driftveil%20City.mp3';
+    const song2 = 'https://dl.vgmdownloads.com/soundtracks/pokemon-black-and-white/jxvyhmil/157%20Unwavering%20Emotions.mp3';
+    const song3 = 'https://dl.vgmdownloads.com/soundtracks/pokemon-omega-ruby-and-alpha-sapphire-super-music-complete-nintendo-3ds/cbaurzxwvi/1-05%20Littleroot%20Town.mp3';
+    const song4 = 'https://dl.vgmdownloads.com/soundtracks/pokemon-ruby-sapphire-music-super-complete/gzbzvzhk/1-04%20Opening%20Select.mp3';
+    const song5 = 'https://dl.vgmdownloads.com/soundtracks/pokemon-black-and-white-super-music-collection/unifuqvddo/1-17.%20Accumula%20Town.mp3';
     rnd = Math.floor((Math.random() * 5) + 1);
     switch(rnd){        
         case 1:
-            music.src = 'https://dl.vgmdownloads.com/soundtracks/pokemon-black-and-white-super-music-collection/xaulleweqx/2-02.%20Driftveil%20City.mp3';
+            if (music.src == song1){
+                music.src = song2;
+            }else {
+            music.src = song1;
+            }
             break;
         case 2:
-            music.src = 'https://dl.vgmdownloads.com/soundtracks/pokemon-black-and-white/jxvyhmil/157%20Unwavering%20Emotions.mp3';
+            if (music.src == song2){
+                music.src = song3;
+            }else{
+            music.src = song2;
+            }
             break;
         case 3:
-            music.src = 'https://dl.vgmdownloads.com/soundtracks/pokemon-omega-ruby-and-alpha-sapphire-super-music-complete-nintendo-3ds/cbaurzxwvi/1-05%20Littleroot%20Town.mp3';
+            if (music.src == song3){
+                music.src = song4;
+            }else{
+            music.src = song3;
+            }
             break;
         case 4:
-            music.src = 'https://dl.vgmdownloads.com/soundtracks/pokemon-ruby-sapphire-music-super-complete/gzbzvzhk/1-04%20Opening%20Select.mp3';
+            if (music.src == song4){
+                music.src = song5;
+            }else{
+            music.src = song4;
+            }
             break;
         case 5:
-            music.src = 'https://dl.vgmdownloads.com/soundtracks/pokemon-black-and-white-super-music-collection/unifuqvddo/1-17.%20Accumula%20Town.mp3';
+            if (music.src == song5){
+                music.src = song1;
+            }else{
+            music.src = song5;
+            }
             break;
     }
     var playPromise = document.querySelector('audio').play();
