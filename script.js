@@ -106,42 +106,32 @@ playBtn.addEventListener('click', () => {
     const song3 = 'https://dl.vgmdownloads.com/soundtracks/pokemon-omega-ruby-and-alpha-sapphire-super-music-complete-nintendo-3ds/cbaurzxwvi/1-05%20Littleroot%20Town.mp3';
     const song4 = 'https://dl.vgmdownloads.com/soundtracks/pokemon-ruby-sapphire-music-super-complete/gzbzvzhk/1-04%20Opening%20Select.mp3';
     const song5 = 'https://dl.vgmdownloads.com/soundtracks/pokemon-black-and-white-super-music-collection/unifuqvddo/1-17.%20Accumula%20Town.mp3';
+
+    function changeSrc(song,nextSong){
+        if (music.src == song){
+            music.src = nextSong;
+        } else {
+            music.src = song;
+        }
+    }
+
     rnd = Math.floor((Math.random() * 5) + 1);
+
     switch(rnd){        
         case 1:
-            if (music.src == song1){
-                music.src = song2;
-            }else {
-            music.src = song1;
-            }
+            changeSrc(song1,song2);
             break;
         case 2:
-            if (music.src == song2){
-                music.src = song3;
-            }else{
-            music.src = song2;
-            }
+            changeSrc(song2,song3);
             break;
         case 3:
-            if (music.src == song3){
-                music.src = song4;
-            }else{
-            music.src = song3;
-            }
+            changeSrc(song3,song4);
             break;
         case 4:
-            if (music.src == song4){
-                music.src = song5;
-            }else{
-            music.src = song4;
-            }
+            changeSrc(song4,song5);
             break;
         case 5:
-            if (music.src == song5){
-                music.src = song1;
-            }else{
-            music.src = song5;
-            }
+            changeSrc(song5,song1);
             break;
     }
     var playPromise = document.querySelector('audio').play();
